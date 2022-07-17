@@ -1,0 +1,15 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.73.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_tfsec
+    - id: terraform_docs
+    - id: terraform_tflint
+      args:
+        - --args=--enable-rule=terraform_documented_variables
+    - id: infracost_breakdown
+      args:
+        - --args=--path=.
+        - --hook-config='.projects[].diff.totalMonthlyCost|tonumber != 10000'
+      verbose: true

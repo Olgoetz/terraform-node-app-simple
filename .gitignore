@@ -1,0 +1,8 @@
+app/
+
+
+.tfsec/
+.terraform/
+**terraform.tfstate**
+
+myplan
