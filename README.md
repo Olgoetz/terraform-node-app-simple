@@ -18,7 +18,7 @@ This repo demonstrates how to deploy a node app on AWS EC2 leveraging IaC.
 
 ## Getting started
 
-Set your aws credentials e.g.
+Set your aws credentials e.g.:
 
 ```bash
 # For user

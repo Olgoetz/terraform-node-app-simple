@@ -1,8 +1,7 @@
 app/
-
-
 .tfsec/
 .terraform/
 **terraform.tfstate**
-
+.DS_STORE
 myplan
+.pem
